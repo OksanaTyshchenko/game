@@ -22,7 +22,7 @@ export const App = () => {
           <TotalScore />
         </Route>
 
-        <p>Not found page</p>
+        <p className="App__foundPage">Not found page</p>
       </Switch>
     </div>
   );

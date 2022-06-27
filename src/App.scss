@@ -14,3 +14,11 @@ body {
   font-weight: 600;
   color: #1C1C21;
 }
+
+.App {
+  &__foundPage {
+    color: red;
+    font-size: 32px;
+    padding: 50px;
+  }
+}
