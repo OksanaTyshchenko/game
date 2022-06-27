@@ -1,0 +1,214 @@
+@import '../../styles/mixins';
+
+.QuestionInfo {
+  display: flex;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    flex-grow: 1;
+    background-color: #E5E5E5;
+  }
+
+  &__menuWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    background-image: url(../../images/Menu.png);
+    border: none;
+    background-color: #E5E5E5;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__menuClose {
+    background-image: url(../../images/Close.png);
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 133px 16px 0 16px;
+    
+    @include onDesktop {
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+    }
+  }
+
+  &__sidebar {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
+      width: 365px;
+    }
+  }
+
+  &__sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #E5E5E5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @include onDesktop {
+      background-color: white;
+      position: static;
+      justify-content: center;
+    }
+  }
+
+  &__buttonsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 122px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      padding-left: 17px;
+      max-width: max-content;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    text-align: left;
+    background-image: url(../../images/RectangleInactive.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 288px;
+    height: 56px;
+    border: transparent;
+    font-size: 14px;
+    line-height: 116%;
+    font-weight: 400;
+    background-color: #E5E5E5;
+    position: relative;
+    transition: background-image background-color 0.3s;
+
+    @include onDesktop {
+      width: 390px;
+      height: 72px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &:hover {
+      background-image: url(../../images/RectangleHover.svg);
+      cursor: pointer;
+
+      &::before {
+        background-color: rgba(40, 105, 232, 0.8);
+      }
+
+      &::after {
+        background-color: rgba(40, 105, 232, 0.8);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 17px;
+      height: 1px;
+      background-color: #D0D0D8;
+      top: 48%;
+      left: -5.5%;
+
+      @include onDesktop {
+        top: 50%;
+        left: -4%;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 17px;
+      height: 1px;
+      background-color: #D0D0D8;
+      top: 48%;
+      right: -5.5%;
+
+      @include onDesktop {
+        top: 50%;
+        right: 0%;
+      }
+    }
+  }
+
+  .QuestionInfo &__selected {
+    background-image: url(../../images/RectangleSelected.svg);
+
+    &::before {
+      background-color: rgba(40, 105, 232, 0.8);
+    }
+
+    &::after {
+      background-color: rgba(40, 105, 232, 0.8);
+    }
+  }
+
+  .QuestionInfo &__correct {
+    background-image: url(../../images/RectangleCorrect.svg);
+
+    &::after {
+      background-color: #51B366;
+    }
+
+    &::before {
+      background-color: #51B366;
+    }
+  }
+
+  .QuestionInfo &__wrong {
+    background-image: url(../../images/RectangleWrong.svg);
+
+    &::after {
+      background-color: #EC5974;
+    }
+
+    &::before {
+      background-color: #EC5974;
+    }
+  }
+
+  &__letter {
+    color: rgba(40, 105, 232, 0.8);
+    margin-right: 5px;
+  }
+}

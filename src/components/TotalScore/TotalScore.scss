@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.TotalScore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+
+  &__header {
+    opacity: 50%;
+    font-size: 32px;
+  }
+}

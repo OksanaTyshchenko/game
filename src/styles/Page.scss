@@ -1,0 +1,94 @@
+@import '../styles/mixins';
+
+.Page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  
+  @include onDesktop {
+    flex-direction: row;
+  }
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: rgba(40, 105, 232, 0.4);
+    z-index: -1;
+  }
+
+  &__image {
+    width: 288px;
+    height: 192px;
+    background-image: url("../images/hand.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 43px;
+
+    @include onDesktop {
+      width: 624px;
+      height: 367px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 116%;
+    margin-bottom: 102px;
+    text-align: center;
+
+    @include onDesktop {
+      font-size: 56px;
+      max-width: 624px;
+      margin-bottom: 64px;
+      text-align: left;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      justify-content: start;
+      align-items: baseline;
+    }
+  }
+
+  &__button {
+    width: 300px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(40, 105, 232, 0.8);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+    border: transparent;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(40, 105, 232, 0.6);
+      cursor: pointer;
+    }
+
+    &:focus {
+      background-color: #2869E8;
+      outline-style: solid;
+      outline-color: #2869E8;
+      outline-width: 1px;
+    }
+  }
+}

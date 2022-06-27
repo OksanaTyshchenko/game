@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+
+.MoneyScore {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 100px;
+
+  @include onDesktop {
+    margin-bottom: 0;
+  }
+
+  &__sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/RectangleInactive.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 240px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 116%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 80px;
+      height: 1px;
+      background-color: #D0D0D8;
+      top: 50%;
+      left: -26%;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 80px;
+      height: 1px;
+      background-color: #D0D0D8;
+      top: 50%;
+      right: -26%;
+    }
+  }
+}
+
+.inactive {
+  color: #D0D0D8;
+}

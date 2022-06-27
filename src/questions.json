@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "answers": [
+      { "corect": false, "answer": "<javascript>" },
+      { "corect": true, "answer": "<script>" },
+      { "corect": false, "answer": "<js>" },
+      { "corect": false, "answer": "<scripting>" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How do you round the number 7.25, to the nearest integer?",
+    "answers": [
+      { "corect": false, "answer": "rnd(7.25)" },
+      { "corect": false, "answer": "round(7.25)" },
+      { "corect": true, "answer": "Math.round(7.25)" },
+      { "corect": false, "answer": "Math.rnd(7.25)" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "How do you find the number with the highest value of x and y?",
+    "answers": [
+      { "corect": false, "answer": "Math.ceil(x, y)" },
+      { "corect": true, "answer": "Math.max(x, y)" },
+      { "corect": false, "answer": "ceil(x, y)" },
+      { "corect": false, "answer": "Math.rnd(7.25)" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How do you create a function in JavaScript?",
+    "answers": [
+      { "corect": true, "answer": "function myFunction()" },
+      { "corect": false, "answer": "function = myFunction()" },
+      { "corect": false, "answer": "function:myFunction()" },
+      { "corect": false, "answer": "function === myFunction()" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "How to write an IF statement in JavaScript?",
+    "answers": [
+      { "corect": false, "answer": "if i == 5 then" },
+      { "corect": false, "answer": "if i = 5 then" },
+      { "corect": false, "answer": "if i = 5" },
+      { "corect": true, "answer": "if (i == 5)" }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What does CSS stand for?",
+    "answers": [
+      { "corect": true, "answer": "Cascading Style Sheets" },
+      { "corect": false, "answer": "Colorful Style Sheets" },
+      { "corect": false, "answer": "Computer Style Sheets" },
+      { "corect": false, "answer": "Creative Style Sheets" }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which HTML attribute is used to define inline styles?",
+    "answers": [
+      { "corect": false, "answer": "font" },
+      { "corect": false, "answer": "styles" },
+      { "corect": true, "answer": "style" },
+      { "corect": false, "answer": "class" }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Which CSS property controls the text size?",
+    "answers": [
+      { "corect": false, "answer": "text-size" },
+      { "corect": true, "answer": "font-size" },
+      { "corect": false, "answer": "text-style" },
+      { "corect": false, "answer": "font-style" }
+    ]
+  },
+  {
+    "id": 9,
+    "question":
+      "How do you make each word in a text start with a capital letter?",
+    "answers": [
+      { "corect": false, "answer": "You can not do that with CSS" },
+      { "corect": false, "answer": "text-style:capitalize" },
+      { "corect": true, "answer": "text-transform:capitalize" },
+      { "corect": false, "answer": "transform:capitalize" }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "How do you select an element with id 'demo'?",
+    "answers": [
+      { "corect": true, "answer": "#demo" },
+      { "corect": false, "answer": "demo" },
+      { "corect": false, "answer": ".demo" },
+      { "corect": false, "answer": "*demo" }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What is the default value of the position property?",
+    "answers": [
+      { "corect": false, "answer": "relative" },
+      { "corect": false, "answer": "absolute" },
+      { "corect": false, "answer": "fixed" },
+      { "corect": true, "answer": "static" }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "How do you select all p elements inside a div element?",
+    "answers": [
+      { "corect": false, "answer": "div.p" },
+      { "corect": true, "answer": "div p" },
+      { "corect": false, "answer": "div + p" },
+      { "corect": false, "answer": "div = p" }
+    ]
+  }
+]
