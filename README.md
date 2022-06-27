@@ -1,9 +1,4 @@
-# React TypeScript Starter Pack
+# Test task Create a game 'Who wants to be a millionaire?'
 
-To use this template click `Use this template`
-
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+1. Technology stack: HTML, CSS, BEM, React, Type Script, Redux, React Router.
+2. Click the link to see [DEMO] (https://oksanatyshchenko.github.io/game/#/).
