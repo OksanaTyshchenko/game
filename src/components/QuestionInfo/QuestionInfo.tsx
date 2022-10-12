@@ -34,7 +34,9 @@ export const QuestionInfo: React.FC<Props> = ({ question }) => {
     setTimeout(() => {
       if (question.id === 12) {
         history.push('/total');
-        dispatch(actions.updateScore(score * 2));
+        if (item.corect) {
+          dispatch(actions.updateScore(score * 2));
+        }
 
         return;
       }
